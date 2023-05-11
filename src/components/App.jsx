@@ -1,14 +1,13 @@
+import { HookUseEffect } from './HookUseEffect/HookUseEffect';
+import { HookUseState } from './HookUseState/HookUseState';
+import { OwnHooks } from './OwnHooks/OwnHooks';
+
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101',
-    // }}
-    ></div>
+    <div>
+      <HookUseState />
+      <HookUseEffect />
+      <OwnHooks />
+    </div>
   );
 };
