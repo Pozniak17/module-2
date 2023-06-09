@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import css from './EventBoard.module.css';
 import { Event } from 'components/Event/Event';
+import { Container } from './EventBoard.styled';
 
 export const EventBoard = ({ events }) => {
   // console.log(events);
   return (
-    <div className={css.eventBoard}>
+    <Container>
       {events.map(event => (
         <Event key={event.name} events={event}></Event>
       ))}
-    </div>
+    </Container>
   );
 };
 
